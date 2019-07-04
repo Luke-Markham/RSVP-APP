@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 
 import Header from "./components/Header.js";
 import Navigation from "./components/Nav.js";
@@ -79,7 +79,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter basename="/Rsvp-App">
         <div className="App">
           <Header attending={this.state.attending} />
           <Navigation />
@@ -97,7 +97,7 @@ class App extends Component {
           </div>
           <Footer />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
