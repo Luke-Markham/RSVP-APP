@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Rsvp-App/static/css/main.a98d010c.chunk.css",
+    "main.js": "/Rsvp-App/static/js/main.e71f0ac9.chunk.js",
+    "main.js.map": "/Rsvp-App/static/js/main.e71f0ac9.chunk.js.map",
+    "runtime~main.js": "/Rsvp-App/static/js/runtime~main.28f0d497.js",
+    "runtime~main.js.map": "/Rsvp-App/static/js/runtime~main.28f0d497.js.map",
+    "static/js/2.409d5739.chunk.js": "/Rsvp-App/static/js/2.409d5739.chunk.js",
+    "static/js/2.409d5739.chunk.js.map": "/Rsvp-App/static/js/2.409d5739.chunk.js.map",
+    "index.html": "/Rsvp-App/index.html",
+    "precache-manifest.b3eafff8086ab82ccf99f7c0312590c4.js": "/Rsvp-App/precache-manifest.b3eafff8086ab82ccf99f7c0312590c4.js",
+    "service-worker.js": "/Rsvp-App/service-worker.js",
+    "static/css/main.a98d010c.chunk.css.map": "/Rsvp-App/static/css/main.a98d010c.chunk.css.map",
+    "static/media/App.css": "/Rsvp-App/static/media/headerBkg.737f0ead.png"
+  }
+}
