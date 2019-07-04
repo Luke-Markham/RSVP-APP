@@ -53,6 +53,17 @@ class App extends Component {
   };
 
   prevAttendeeId = 4;
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.attendees !== prevState.attendees) {
+      this.state.attendees.forEach(attendee => {
+        if (attendee.plusOne === true) {
+          this.setState({ attending: this.state.attending + 2 });
+        } else {
+          this.setState({ attending: this.state.attending + 1 });
+        }
+      });
+    }
+  }
 
   handleAddAttendee = whosComingState => {
     const {
@@ -79,7 +90,7 @@ class App extends Component {
 
   render() {
     return (
-      <HashRouter basename="/Rsvp-App">
+      <HashRouter>
         <div className="App">
           <Header attending={this.state.attending} />
           <Navigation />

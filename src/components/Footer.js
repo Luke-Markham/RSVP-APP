@@ -1,17 +1,17 @@
-import React from 'react'
-
-
-
+import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
+  return (
+    <footer className="Footer">
+      <h3>RSVP</h3>
+      <p>Enjoy The Party</p>
+      <HashLink className="bk2top" to="#top">
+        {" "}
+        Back To Top
+      </HashLink>
+    </footer>
+  );
+};
 
-    return (
-        <footer className="Footer">
-            <h3>RSVP</h3>
-            <p>Enjoy The Party</p>
-            <a href="#top"> Back To Top</a>
-        </footer>
-    )
-}
-
-export default Footer 
+export default Footer;

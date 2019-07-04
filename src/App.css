@@ -69,10 +69,16 @@ fieldset {
   padding: 1em;
   border-radius: 5px;
   border: none;
+  transition: 0.8s all;
+  background-position: top center;
 }
 
 .btn:focus {
   outline: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
 
 .whosGoingAndPlaylist-list-wrapper {
@@ -174,6 +180,11 @@ li {
   margin-top: 1.5em;
 }
 
+.coming-btn:active {
+  background-image: url(./images/strobeBkg.jpeg);
+  background-position: center;
+}
+
 .please-rsvp {
   font-family: var(--secondary-font);
   margin-bottom: 2em;
@@ -182,6 +193,7 @@ li {
 .who-fieldset {
   width: 75%;
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
 }
 
@@ -236,7 +248,8 @@ li {
   padding: 0.5em;
   color: var(--primary-font-color);
   background-color: var(--secondary-color);
-  background-image: url(./images/headerBkg.png);
+  background-image: url(./images/strobeBkg.jpeg);
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid black;
@@ -270,9 +283,19 @@ li {
   margin-bottom: 1.5em;
 }
 
+.playlist-card {
+  background-image: url(./images/eqBkg.jpg);
+  background-position: center center;
+}
+.playlist-btn:active {
+  background-image: url(./images/eqBkg.jpg);
+  background-position: center;
+}
+
 .playlist-fieldset {
   width: 75%;
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
 }
 
@@ -317,9 +340,14 @@ li {
   font-family: var(--secondary-font);
 }
 
-.Footer a {
+.bk2top {
   text-decoration: none;
   color: white;
+  transition: transform 0.5s;
+}
+
+.bk2top:hover {
+  transform: scale(1.08);
 }
 
 /* Media Queries =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

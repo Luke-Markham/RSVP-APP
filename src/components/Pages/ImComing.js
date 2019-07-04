@@ -100,7 +100,7 @@ class ImComing extends Component {
               </div>
             </fieldset>
 
-            <button className="btn" type="submit">
+            <button className="btn coming-btn" type="submit">
               Let's Party!
             </button>
           </form>

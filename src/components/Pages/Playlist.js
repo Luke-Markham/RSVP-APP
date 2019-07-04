@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 class Playlist extends Component {
   state = {
+    song_title: "",
+    song_artist: "",
     playlist: [
       {
         song_title: "Yeah",
@@ -39,6 +41,8 @@ class Playlist extends Component {
   handlePlaylistSubmit = e => {
     this.setState(prevState => {
       return {
+        song_title: "",
+        song_artist: "",
         playlist: [
           ...this.state.playlist,
           {
@@ -67,8 +71,8 @@ class Playlist extends Component {
                 type="text"
                 name="song_title"
                 id="song-title"
-                placeholder="Song title..."
-                value={this.state.playlist.song_title}
+                placeholder="Song Title..."
+                value={this.state.song_title}
                 onChange={this.handleInputChange}
                 required
               />
@@ -80,19 +84,19 @@ class Playlist extends Component {
                 name="song_artist"
                 id="artist"
                 placeholder="Artist name..."
-                value={this.state.playlist.song_artist}
+                value={this.state.song_artist}
                 onChange={this.handleInputChange}
                 required
               />
               <br />
             </fieldset>
-            <button className="btn" type="submit">
+            <button className="btn playlist-btn" type="submit">
               Play it!
             </button>
           </form>
           <div className="whosGoingAndPlaylist-list-wrapper">
             {this.state.playlist.map(song => (
-              <div key={song.id.toString()} className="name-card">
+              <div key={song.id.toString()} className="name-card playlist-card">
                 <span className="capitalize-details">{song.song_title}</span>
                 <br />
                 <span className="capitalize-details">{song.song_artist}</span>
