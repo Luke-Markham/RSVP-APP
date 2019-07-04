@@ -2,7 +2,7 @@
   "name": "contents",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Luke-Markham.github.io/Rsvp-App/contents",
+  "homepage": "https://Luke-Markham.github.io/Rsvp-App/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
