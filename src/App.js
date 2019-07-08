@@ -90,8 +90,9 @@ class App extends Component {
 
   render() {
     return (
+      <div className="App">
       <HashRouter>
-        <div className="App">
+  
           <Header attending={this.state.attending} />
           <Navigation />
           <div className="main-content-wrapper">
@@ -107,8 +108,9 @@ class App extends Component {
             <Route path="/Playlist" render={() => <Playlist />} />
           </div>
           <Footer />
-        </div>
+       
       </HashRouter>
+      </div>
     );
   }
 }
