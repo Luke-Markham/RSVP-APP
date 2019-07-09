@@ -44,7 +44,7 @@ class App extends Component {
       {
         firstName: "Jessica",
         lastName: "Nambers",
-        phone: "232-667-789",
+        phone: "232-667-7892",
         plusOne: true,
         soberDriver: false,
         id: 4

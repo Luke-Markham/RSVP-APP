@@ -73,7 +73,7 @@ fieldset {
   padding: 1em;
   border-radius: 5px;
   border: none;
-  transition: 0.8s all;
+  transition: 0.5s all;
   background-position: top center;
 }
 

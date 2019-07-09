@@ -14,17 +14,21 @@ class Details extends Component {
               Hey, Soooo I'm turning 21! Damn... where does the time go ? So I
               hope ya'll can come and celebrate with me and catch up with each
               other. We are gonna have finger food and of course there will be
-              multple Kegs of bud, however you should also bring your own ;)
+              multiple kegs of bud, however you should also bring your own ;)
             </p>
             <h5>Note:</h5>
             <p>
-              Formal attire.<br />
+              Formal attire.
               <br />
-              Respect the property.<br />
               <br />
-              Respect the people.<br />
+              Respect the property.
+              <br />
+              <br />
+              Respect the people.
+              <br />
               My extended family will be in attendance, including my
-              grandparents.<br />
+              grandparents.
+              <br />
               <br />
               There will be security.
             </p>
@@ -34,9 +38,11 @@ class Details extends Component {
           <div className="where">
             <h4>Where:</h4>
             <p>
-              My House<br />
+              My House
+              <br />
               88 Woodensdale Ave <br />
-              Normsford<br />
+              Normsford
+              <br />
               Alender City
             </p>
           </div>
@@ -45,9 +51,12 @@ class Details extends Component {
           <div className="when">
             <h4>When:</h4>
             <p>
-              7:30pm<br />
-              Saturday 20th<br />
-              November<br />
+              7:30pm
+              <br />
+              Saturday 20th
+              <br />
+              November
+              <br />
               2019
             </p>
           </div>
