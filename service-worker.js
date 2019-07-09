@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Rsvp-App/precache-manifest.1558f44692efefecea02f83abde7556d.js"
+  "/Rsvp-App/precache-manifest.9272a32bbe7ed4be5fa3d5b9128810fa.js"
 );
 
 self.addEventListener('message', (event) => {
