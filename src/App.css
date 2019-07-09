@@ -21,9 +21,9 @@
   margin: 0 auto;
 } */
 
-footer {
+/* footer {
   margin-top: auto;
-}
+} */
 
 body {
   font-family: var(--secondary-font);
@@ -367,7 +367,3 @@ li {
 }
 
 /* =-=-=-=-=- */
-.Footer,
-nav {
-  padding-top: 1px;
-}
