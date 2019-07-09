@@ -365,3 +365,9 @@ li {
     width: 80%;
   }
 }
+
+/* =-=-=-=-=- */
+.Footer,
+nav {
+  padding-top: 1px;
+}
