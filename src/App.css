@@ -12,22 +12,26 @@
 }
 /* sticky footer in .App & footer */
 .App {
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
-/* 
-.main-content-wrapper {
-  margin: 0 auto;
-} */
-
-/* footer {
-  margin-top: auto;
-} */
 
 body {
   font-family: var(--secondary-font);
   margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-content-wrapper {
+  min-height: calc(100vh - 62px);
+}
+.Footer {
+  height: 62px;
 }
 
 input {
@@ -365,5 +369,3 @@ li {
     width: 80%;
   }
 }
-
-/* =-=-=-=-=- */

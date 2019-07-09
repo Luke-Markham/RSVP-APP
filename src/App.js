@@ -91,11 +91,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <HashRouter>
-  
-          <Header attending={this.state.attending} />
-          <Navigation />
+        <HashRouter>
           <div className="main-content-wrapper">
+            <Header attending={this.state.attending} />
+            <Navigation />
             <Route exact path="/" render={() => <Details />} />
             <Route
               path="/ImComing"
@@ -108,8 +107,7 @@ class App extends Component {
             <Route path="/Playlist" render={() => <Playlist />} />
           </div>
           <Footer />
-       
-      </HashRouter>
+        </HashRouter>
       </div>
     );
   }
