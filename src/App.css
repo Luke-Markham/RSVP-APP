@@ -339,12 +339,12 @@ li {
   margin-top: 1.3em;
 }
 
-.Footer p,
-.Footer a {
-  font-family: var(--secondary-font);
+.Footer p {
+  margin-left: 0.75em;
 }
 
 .bk2top {
+  font-family: var(--secondary-font);
   text-decoration: none;
   color: white;
   transition: transform 0.5s;
