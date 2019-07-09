@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "008961255cd021facd6d4af255f3aac7",
+    "revision": "35164db9d26f05fc0ef6cb20ef2b8cee",
     "url": "/Rsvp-App/index.html"
   },
   {
-    "revision": "d89e35d8f26f6ea33f8a",
-    "url": "/Rsvp-App/static/css/main.715919b1.chunk.css"
+    "revision": "60ed621b406cff2620c9",
+    "url": "/Rsvp-App/static/css/main.8a3614a4.chunk.css"
   },
   {
     "revision": "e0431f4d9f1a43e80deb",
     "url": "/Rsvp-App/static/js/2.f511f00f.chunk.js"
   },
   {
-    "revision": "d89e35d8f26f6ea33f8a",
+    "revision": "60ed621b406cff2620c9",
     "url": "/Rsvp-App/static/js/main.02ee1ce3.chunk.js"
   },
   {
