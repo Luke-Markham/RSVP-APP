@@ -49,10 +49,33 @@ class App extends Component {
         soberDriver: false,
         id: 4
       }
+    ],
+    playlist: [
+      {
+        song_title: "Yeah",
+        song_artist: "Usher ft. Lil Jon, Ludacris",
+        id: 1
+      },
+      {
+        song_title: "Look Alive",
+        song_artist: "Rae Sremmurd",
+        id: 2
+      },
+      {
+        song_title: "Sweet Child O' Mine",
+        song_artist: "Guns N' Roses",
+        id: 3
+      },
+      {
+        song_title: "Smooth Criminal",
+        song_artist: "Michael Jackson",
+        id: 4
+      }
     ]
   };
 
   prevAttendeeId = 4;
+
   componentDidUpdate(prevProps, prevState) {
     if (this.state.attendees !== prevState.attendees) {
       this.state.attendees.forEach(attendee => {
@@ -88,6 +111,12 @@ class App extends Component {
     });
   };
 
+  handleAddSongToPlaylist = song => {
+    this.setState({
+      playlist: [...this.state.playlist, song]
+    });
+  };
+
   render() {
     return (
       <div className="App">
@@ -104,7 +133,15 @@ class App extends Component {
               path="/WhosGoing"
               render={() => <WhosGoing attendees={this.state.attendees} />}
             />
-            <Route path="/Playlist" render={() => <Playlist />} />
+            <Route
+              path="/Playlist"
+              render={() => (
+                <Playlist
+                  playlist={this.state.playlist}
+                  handleAddSong={this.handleAddSongToPlaylist}
+                />
+              )}
+            />
           </div>
           <Footer />
         </HashRouter>

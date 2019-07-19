@@ -4,31 +4,8 @@ class Playlist extends Component {
   state = {
     song_title: "",
     song_artist: "",
-    playlist: [
-      {
-        song_title: "Yeah",
-        song_artist: "Usher ft. Lil Jon, Ludacris",
-        id: 1
-      },
-      {
-        song_title: "Look Alive",
-        song_artist: "Rae Sremmurd",
-        id: 2
-      },
-      {
-        song_title: "Sweet Child O' Mine",
-        song_artist: "Guns N' Roses",
-        id: 3
-      },
-      {
-        song_title: "Smooth Criminal",
-        song_artist: "Michael Jackson",
-        id: 4
-      }
-    ]
+    id: 5
   };
-
-  prevSongId = 4;
 
   handleInputChange = e => {
     const value = e.target.value;
@@ -39,22 +16,13 @@ class Playlist extends Component {
   };
 
   handlePlaylistSubmit = e => {
-    this.setState(prevState => {
-      return {
-        song_title: "",
-        song_artist: "",
-        playlist: [
-          ...this.state.playlist,
-          {
-            song_title: this.state.song_title,
-            song_artist: this.state.song_artist,
-            id: (this.prevSongId += 1)
-          }
-        ]
-      };
-    });
-
     e.preventDefault();
+    this.setState({
+      song_title: "",
+      song_artist: "",
+      id: this.state.id + 1
+    });
+    this.props.handleAddSong(this.state);
   };
 
   render() {
@@ -95,7 +63,7 @@ class Playlist extends Component {
             </button>
           </form>
           <div className="whosGoingAndPlaylist-list-wrapper">
-            {this.state.playlist.map(song => (
+            {this.props.playlist.map(song => (
               <div key={song.id.toString()} className="name-card playlist-card">
                 <span className="capitalize-details">{song.song_title}</span>
                 <br />
