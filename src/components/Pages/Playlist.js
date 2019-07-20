@@ -17,11 +17,12 @@ class Playlist extends Component {
 
   handlePlaylistSubmit = e => {
     e.preventDefault();
-    this.setState({
+    this.setState(prevState => ({
       song_title: "",
       song_artist: "",
-      id: this.state.id + 1
-    });
+      id: prevState.id + 1
+    }));
+
     this.props.handleAddSong(this.state);
   };
 

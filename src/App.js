@@ -88,17 +88,22 @@ class App extends Component {
     }
   }
 
-  handleAddAttendee = whosComingState => {
+  //   this.setState((prevState) => ({
+  // attending: prevState + 2
+  //   }));
+
+  handleAddAttendee = imComingFormState => {
     const {
       user_name_first,
       user_surname,
       user_phone,
       user_plusOne,
       user_soberDriver
-    } = whosComingState;
-    this.setState({
+    } = imComingFormState;
+
+    this.setState(prevState => ({
       attendees: [
-        ...this.state.attendees,
+        ...prevState.attendees,
         {
           firstName: user_name_first,
           lastName: user_surname,
@@ -108,13 +113,13 @@ class App extends Component {
           id: (this.prevAttendeeId += 1)
         }
       ]
-    });
+    }));
   };
 
   handleAddSongToPlaylist = song => {
-    this.setState({
-      playlist: [...this.state.playlist, song]
-    });
+    this.setState(prevState => ({
+      playlist: [...prevState.playlist, song]
+    }));
   };
 
   render() {
